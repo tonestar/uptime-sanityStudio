@@ -31,6 +31,8 @@ import Testimonials from './Blocks/Testimonials'
 import TestimonialSlider from './Blocks/TestimonialSlider'
 import VideoEmbed from './Blocks/VideoEmbed'
 import Heading from './Blocks/Heading'
+import threeUp from './Blocks/ThreeUp'
+import partnersSection from './Blocks/PartnersSection'
 
 // Export as a flat array for Sanity v3
 export const schemaTypes = [
@@ -46,6 +48,7 @@ export const schemaTypes = [
 
   // Blocks
   threeUpBlock,
+  threeUp,
   splitBlock,
   Bio,
   CTA,
@@ -71,4 +74,5 @@ export const schemaTypes = [
   TestimonialSlider,
   Testimonials,
   VideoEmbed,
+  partnersSection,
 ]
