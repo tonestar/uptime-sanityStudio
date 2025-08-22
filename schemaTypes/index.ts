@@ -5,6 +5,7 @@ import homePage from './homePage-schema'
 import author from './author-schema'
 import category from './category-schema'
 import code from './code-schema'
+import siteSettings from './siteSettings-schema'
 import threeUpBlock from './Blocks/ThreeUpBlock'
 import splitBlock from './Blocks/SplitBlock'
 import Bio from './Blocks/Bio'
@@ -42,6 +43,7 @@ export const schemaTypes = [
   article,
   author,
   category,
+  siteSettings,
 
   // Objects
   code,
