@@ -124,6 +124,14 @@ export default defineType({
       group: 'content',
     }),
     defineField({
+      name: 'showInMenu',
+      type: 'boolean',
+      title: 'Show in Navigation Menu',
+      description: 'Toggle whether this page appears in the site navigation',
+      initialValue: true,
+      group: 'content',
+    }),
+    defineField({
       name: 'seo',
       type: 'object',
       title: 'SEO Settings',

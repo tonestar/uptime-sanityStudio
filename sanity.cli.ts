@@ -2,8 +2,8 @@ import {defineCliConfig} from 'sanity/cli'
 
 export default defineCliConfig({
   api: {
-    projectId: 'cyxit282',
-    // dataset: 'your-dataset-name',
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'cyxit282',
+    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   },
   autoUpdates: true,
   studioHost: 'uptime',

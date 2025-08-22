@@ -18,6 +18,11 @@ const bio = defineType({
       title: 'Position',
     }),
     defineField({
+      name: 'heading',
+      type: 'string',
+      title: 'Heading',
+    }),
+    defineField({
       name: 'content',
       title: 'Content',
       type: 'array',

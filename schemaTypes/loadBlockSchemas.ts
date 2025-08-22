@@ -1,6 +1,6 @@
 import Bio from './Blocks/Bio'
 // import BlogPostList from './Blocks/BlogPostList'
-// import ContactForm from './Blocks/ContactForm'
+import ContactForm from './Blocks/ContactForm'
 // import CTA from './Blocks/CTA'
 // import CTAd from './Blocks/CTAd'
 // import EventListing from './Blocks/EventListing'
@@ -32,7 +32,7 @@ export const blockSchemas = [
   // BlogPostList,
   // CTA,
   // CTAd,
-  // ContactForm,
+  ContactForm,
   // EventListing,
   // FAQSection,
   // Feature,

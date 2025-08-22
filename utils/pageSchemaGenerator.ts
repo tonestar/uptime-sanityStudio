@@ -37,6 +37,20 @@ export const pageSchemaGenerator = (name: string, title: string, additionalField
       ],
     }),
     defineField({
+      name: 'contentPosition',
+      type: 'string',
+      title: 'Content Position',
+      description: 'Where to display the content relative to page builder sections',
+      options: {
+        list: [
+          {title: 'Before Page Builder', value: 'before'},
+          {title: 'After Page Builder', value: 'after'},
+        ],
+      },
+      initialValue: 'before',
+      hidden: ({document}) => !document?.content || (document.content as any[]).length === 0,
+    }),
+    defineField({
       name: 'pageBuilder',
       type: 'array',
       title: 'Page Builder',
@@ -47,6 +61,13 @@ export const pageSchemaGenerator = (name: string, title: string, additionalField
         }),
       ),
       ...pageBuilderConfig,
+    }),
+    defineField({
+      name: 'showInMenu',
+      type: 'boolean',
+      title: 'Show in Navigation Menu',
+      description: 'Toggle whether this page appears in the site navigation',
+      initialValue: true,
     }),
     defineField({
       name: 'seo',

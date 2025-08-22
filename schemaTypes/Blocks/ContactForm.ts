@@ -22,8 +22,7 @@ const ContactForm = defineType({
       name: 'title',
       type: 'string',
       title: 'Form Title',
-      description: 'The main heading for your contact form',
-      validation: (rule: StringRule) => rule.required(),
+      description: 'The main heading for your contact form (optional)',
       group: 'content',
     }),
     defineField({
